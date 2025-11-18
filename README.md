@@ -1,11 +1,5 @@
-# books-register
+# Books-register
 A personal project to register the books that I read and track how long it takes to read them.
-
-## Setup
-
-### Prerequisites
-- Python 3.8 or higher
-- pip (Python package manager)
 
 ### Installation
 
@@ -48,9 +42,7 @@ uvicorn app.main:app --reload
    - `--reload` enables auto-reload on code changes (useful for development)
 
 3. The API will be available at:
-   - **API**: http://localhost:8000
    - **Interactive API Documentation (Swagger UI)**: http://localhost:8000/docs
-   - **Alternative API Documentation (ReDoc)**: http://localhost:8000/redoc
 
 ### API Endpoints
 
@@ -86,10 +78,5 @@ uvicorn app.main:app --reload
    yarn start
    ```
 
-4. The frontend will typically be available at http://localhost:3000 (or as specified in the frontend configuration)
+4. The frontend will typically be available at http://localhost:3000
 
-## Database
-
-The application uses SQLite by default. The database file (`books.db`) will be created automatically in the project root when you first run the application.
-
-To use PostgreSQL instead, update the `SQLALCHEMY_DATABASE_URL` in `app/database.py`.
